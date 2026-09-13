@@ -26,7 +26,7 @@
         .lang-btn { background: transparent; color: #FFC20E; border: 1px solid #FFC20E; padding: 6px 14px; border-radius: 20px; cursor: pointer; font-weight: bold; font-size: 13px; transition: 0.2s; }
         .lang-btn.active, .lang-btn:hover { background: #FFC20E; color: #002B49; }
 
-        /* Logo SANS ARRIÈRE-PLAN */
+        /* Logo PNG TRANSPARENT */
         .logo-container { 
             display: flex; 
             justify-content: center; 
@@ -38,14 +38,12 @@
             max-width: 250px; 
             height: auto; 
             background: transparent;
-            mix-blend-mode: screen;
-            filter: brightness(1.1);
             animation: logoGlow 3s ease-in-out infinite;
         }
         
         @keyframes logoGlow {
-            0%, 100% { filter: brightness(1.1) drop-shadow(0 0 5px rgba(255, 194, 14, 0.3)); }
-            50% { filter: brightness(1.2) drop-shadow(0 0 15px rgba(255, 194, 14, 0.6)); }
+            0%, 100% { filter: drop-shadow(0 0 5px rgba(255, 194, 14, 0.3)); }
+            50% { filter: drop-shadow(0 0 15px rgba(255, 194, 14, 0.6)); }
         }
 
         h1 { color: #FFC20E; margin-bottom: 5px; font-size: 22px; text-transform: uppercase; letter-spacing: 1px; }
@@ -97,7 +95,7 @@
         <button class="lang-btn" id="btn-lang-en" onclick="changeLanguage('en')">EN</button>
     </div>
 
-    <!-- Logo SANS ARRIÈRE-PLAN -->
+    <!-- Logo PNG TRANSPARENT -->
     <div class="logo-container">
         <img src="logo.png" alt="Enactus ENSA Berrechid" id="logo-img">
     </div>
